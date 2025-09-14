@@ -2,10 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- This is an SEO Change: Improve title for better keywords -->
+    <title>Personal Budget App | Free Finance & Expense Tracker</title>
+
+    <!-- This is an SEO Change: Fix typo and make description more engaging -->
+    <meta name="description" content="A free personal budget app to manage expenses, track savings, and stay on top of your finances.">
+
+    <!-- This is an SEO Change: Expand keywords for better search ranking -->
+    <meta name="keywords" content="budget app, free finance tracker, money management, expense tracker, savings">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Budget</title>
-    <meta name="description" content="A free personal budger app">
-    <meta name="keywords" content="app free budget finance">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
 </head>
@@ -13,26 +20,33 @@
 
 <a href="#main" class="skip">Skip to content</a>
 
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/login.html">Login</a></li>
-            <li><a href="https://google.com">Google</a></li>
-        </ul>
-    </nav>
+    <!-- This is a Semantic HTML Change: Use <header> for site-wide heading/navigation -->
+    <header>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/login.html">Login</a></li>
+                <li><a href="https://google.com">Google</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="hero">
+    <!-- This is a Semantic HTML Change: Use <section> instead of a generic <div> -->
+    <section class="hero">
+        <!-- This is an A11y Change: Only one <h1> for page; demote secondary heading -->
         <h1>Personal Budget</h1>
         <h2>A personal-budget management app</h2>
-    </div>
+    </section>
 
     <main class="center" id="main">
 
-        <div class="page-area">
+        <!-- This is a Semantic HTML Change: Use <section> for grouped page content -->
+        <section class="page-area">
 
+            <!-- This is an A11y Change: Ensure proper heading structure (use h2 instead of multiple h1s) -->
             <article>
-                <h1>Stay on track</h1>
+                <h2>Stay on track</h2>
                 <p>
                     Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
@@ -41,30 +55,30 @@
             </article>
     
             <article>
-                <h1>Alerts</h1>
+                <h2>Alerts</h2>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
             </article>
     
             <article>
-                <h1>Results</h1>
+                <h2>Results</h2>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
-                    Also, they to live happier lives... since they expend without guilt or fear... 
+                    Also, they live happier lives... since they spend without guilt or fear... 
                     because they know it is all good and accounted for.
                 </p>
             </article>
     
             <article>
-                <h1>Free</h1>
+                <h2>Free</h2>
                 <p>
                     This app is free!!! And you are the only one holding your data!
                 </p>
             </article>
     
             <article>
-                <h1>Stay on track</h1>
+                <h2>Stay on track</h2>
                 <p>
                     Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
@@ -73,33 +87,35 @@
             </article>
     
             <article>
-                <h1>Alerts</h1>
+                <h2>Alerts</h2>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
             </article>
     
             <article>
-                <h1>Results</h1>
+                <h2>Results</h2>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
-                    Also, they to live happier lives... since they expend without guilt or fear... 
+                    Also, they live happier lives... since they spend without guilt or fear... 
                     because they know it is all good and accounted for.
                 </p>
             </article>
     
             <article>
-                <h1>Chart</h1>
+                <!-- This is an A11y Change: Add aria-label for context -->
+                <h2>Chart</h2>
                 <p>
-                    <canvas id="myChart" width="400" height="400"></canvas>
+                    <canvas id="myChart" width="400" height="400" aria-label="Budget distribution chart" role="img"></canvas>
                 </p>
             </article>
 
-        </div>
+        </section>
 
     </main>
 
-    <footer class="bottom">
+    <!-- This is a Semantic HTML Change: Use <footer> with proper landmark role -->
+    <footer class="bottom" role="contentinfo">
         <div class="center">
             All rights reserved &copy; Fabio Nolasco
         </div>
