@@ -1,5 +1,5 @@
 <main class="center" id="main">
-
+        <pb-breadcrumbs></pb-breadcrumbs>
         <!-- This is a Semantic HTML Change: Use <section> for grouped page content -->
         <section class="page-area">
 
@@ -7,7 +7,7 @@
             <pb-article>
     <h2>Stay on track</h2>
     <span slot="content">Do you know where you are spending your money? If you really stop to track it down, you would get surprised!</span>
-</pb-article>
+            </pb-article>
 
             <pb-article>
                 <h2>Alertsssss</h2>
@@ -66,7 +66,7 @@
                 <!-- This is an A11y Change: Add aria-label for context -->
                 <h2>Chart</h2>
                 <span slot="content">
-                    <canvas id="myChart" width="400" height="400" aria-label="Budget distribution chart" role="img"></canvas>
+                    <div #d3Chart aria-label="Budget distribution chart" role="img"></div>
                 </span>
             </pb-article>
 
